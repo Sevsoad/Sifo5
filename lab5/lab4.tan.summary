@@ -5,29 +5,29 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 1.538 ns
-From           : address[6]
-To             : lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_nrv:auto_generated|ram_block1a0~porta_address_reg6
+Actual Time    : 0.071 ns
+From           : MemoryData[0]
+To             : CommandHandler:inst2|lpm_tff1:inst|lpm_ff:lpm_ff_component|dffs[0]
 From Clock     : --
-To Clock       : rom0_or_ram1
+To Clock       : clk
 Failed Paths   : 0
 
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 14.221 ns
-From           : lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_nrv:auto_generated|ram_block1a0~porta_address_reg7
-To             : output[4]
-From Clock     : clock
+Actual Time    : 11.240 ns
+From           : CommandHandler:inst2|lpm_tff1:inst|lpm_ff:lpm_ff_component|dffs[7]
+To             : TestCommand[7]
+From Clock     : clk
 To Clock       : --
 Failed Paths   : 0
 
 Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
-Actual Time    : 10.472 ns
-From           : read0_or_write1
-To             : output[4]
+Actual Time    : 7.367 ns
+From           : RonIN[0]
+To             : MemoryDataOut[0]
 From Clock     : --
 To Clock       : --
 Failed Paths   : 0
@@ -35,41 +35,21 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : 0.807 ns
-From           : address[5]
-To             : lpm_ram_io:ram|altram:sram|altsyncram:ram_block|altsyncram_aa91:auto_generated|ram_block1a0~porta_address_reg5
+Actual Time    : 1.116 ns
+From           : MemoryData[3]
+To             : CommandHandler:inst2|lpm_tff1:inst|lpm_ff:lpm_ff_component|dffs[3]
 From Clock     : --
-To Clock       : clock
+To Clock       : clk
 Failed Paths   : 0
 
-Type           : Clock Setup: 'rom0_or_ram1'
+Type           : Clock Setup: 'clk'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 381.68 MHz ( period = 2.620 ns )
-From           : lpm_ram_io:ram|altram:sram|altsyncram:ram_block|altsyncram_aa91:auto_generated|ram_block1a0~porta_address_reg7
-To             : lpm_ram_io:ram|altram:sram|altsyncram:ram_block|altsyncram_aa91:auto_generated|q_a[7]
-From Clock     : rom0_or_ram1
-To Clock       : rom0_or_ram1
-Failed Paths   : 0
-
-Type           : Clock Setup: 'read0_or_write1'
-Slack          : N/A
-Required Time  : None
-Actual Time    : 396.20 MHz ( period = 2.524 ns )
-From           : lpm_ram_io:ram|altram:sram|altsyncram:ram_block|altsyncram_aa91:auto_generated|ram_block1a0~porta_address_reg7
-To             : lpm_ram_io:ram|altram:sram|altsyncram:ram_block|altsyncram_aa91:auto_generated|q_a[7]
-From Clock     : read0_or_write1
-To Clock       : read0_or_write1
-Failed Paths   : 0
-
-Type           : Clock Setup: 'clock'
-Slack          : N/A
-Required Time  : None
-Actual Time    : 455.37 MHz ( period = 2.196 ns )
-From           : lpm_ram_io:ram|altram:sram|altsyncram:ram_block|altsyncram_aa91:auto_generated|ram_block1a0~porta_address_reg7
-To             : lpm_ram_io:ram|altram:sram|altsyncram:ram_block|altsyncram_aa91:auto_generated|q_a[7]
-From Clock     : clock
-To Clock       : clock
+Actual Time    : 186.29 MHz ( period = 5.368 ns )
+From           : CommandHandler:inst2|lpm_tff1:inst|lpm_ff:lpm_ff_component|dffs[0]
+To             : IPreg:inst|lpm_counter3:inst|lpm_counter:lpm_counter_component|cntr_n9j:auto_generated|safe_q[0]
+From Clock     : clk
+To Clock       : clk
 Failed Paths   : 0
 
 Type           : Total number of failed paths

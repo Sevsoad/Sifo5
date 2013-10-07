@@ -38,35 +38,49 @@
 
 set_global_assignment -name FAMILY "Stratix II"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY memory
+set_global_assignment -name TOP_LEVEL_ENTITY control
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:33:01  MAY 20, 2013"
 set_global_assignment -name LAST_QUARTUS_VERSION 9.1
 set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
 set_global_assignment -name DEVICE_FILTER_SPEED_GRADE FASTEST
-set_global_assignment -name BDF_FILE memory.bdf
-set_global_assignment -name BDF_FILE main.bdf
-set_global_assignment -name BDF_FILE control.bdf
-set_global_assignment -name BDF_FILE IPreg.bdf
-set_global_assignment -name QIP_FILE lpm_counter0.qip
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_global_assignment -name LL_ROOT_REGION ON -entity lab4 -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -entity lab4 -section_id "Root Region"
 set_global_assignment -name SIMULATION_MODE FUNCTIONAL
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE Waveform.vwf
+set_global_assignment -name BDF_FILE memory.bdf
+set_global_assignment -name BDF_FILE main.bdf
+set_global_assignment -name BDF_FILE control.bdf
+set_global_assignment -name BDF_FILE IPreg.bdf
+set_global_assignment -name BDF_FILE Ron.bdf
+set_global_assignment -name BDF_FILE BusConnector.bdf
+set_global_assignment -name BDF_FILE CommandHandler.bdf
+set_global_assignment -name BDF_FILE Test.bdf
+set_global_assignment -name QIP_FILE lpm_counter0.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_global_assignment -name QIP_FILE ../quartus1/lpm_shiftreg0.qip
 set_global_assignment -name HEX_FILE ROM.hex
 set_global_assignment -name HEX_FILE RAM.hex
 set_global_assignment -name QIP_FILE lpm_counter1.qip
 set_global_assignment -name QIP_FILE lpm_counter2.qip
 set_global_assignment -name QIP_FILE lpm_mux0.qip
-set_global_assignment -name BDF_FILE Ron.bdf
-set_global_assignment -name BDF_FILE BusConnector.bdf
 set_global_assignment -name QIP_FILE lpm_bustri0.qip
 set_global_assignment -name QIP_FILE lpm_counter3.qip
 set_global_assignment -name QIP_FILE lpm_tff0.qip
-set_global_assignment -name BDF_FILE Test.bdf
-set_global_assignment -name BDF_FILE CommandHandler.bdf
+set_global_assignment -name QIP_FILE lpm_tff1.qip
+set_global_assignment -name QIP_FILE lpm_counter4.qip
+set_global_assignment -name BDF_FILE CommandDecoder.bdf
+set_global_assignment -name QIP_FILE lpm_decode0.qip
+set_global_assignment -name BDF_FILE RtoM.bdf
+set_global_assignment -name BDF_FILE BusConnector2.bdf
+set_global_assignment -name QIP_FILE lpm_mux1.qip
+set_global_assignment -name QIP_FILE lpm_counter5.qip
+set_global_assignment -name QIP_FILE lpm_tff2.qip
+set_global_assignment -name BDF_FILE ClkRouter.bdf
+set_global_assignment -name QIP_FILE lpm_counter6.qip
+set_global_assignment -name QIP_FILE lpm_and0.qip
+set_global_assignment -name QIP_FILE lpm_mux2.qip
+set_global_assignment -name QIP_FILE lpm_decode1.qip
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
