@@ -19,5 +19,5 @@ FUNCTION lpm_counter6
 )
 
 RETURNS (
-	q[1..0]
+	q[0..0]
 );

@@ -16,7 +16,6 @@
 component lpm_counter3
 	PORT
 	(
-		clk_en		: IN STD_LOGIC ;
 		clock		: IN STD_LOGIC ;
 		data		: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
 		sload		: IN STD_LOGIC ;

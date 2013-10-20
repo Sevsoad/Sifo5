@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Stratix II"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY control
+set_global_assignment -name TOP_LEVEL_ENTITY main
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:33:01  MAY 20, 2013"
 set_global_assignment -name LAST_QUARTUS_VERSION 9.1
@@ -81,6 +81,12 @@ set_global_assignment -name QIP_FILE lpm_counter6.qip
 set_global_assignment -name QIP_FILE lpm_and0.qip
 set_global_assignment -name QIP_FILE lpm_mux2.qip
 set_global_assignment -name QIP_FILE lpm_decode1.qip
+set_global_assignment -name QIP_FILE lpm_shiftreg0.qip
+set_global_assignment -name QIP_FILE lpm_counter7.qip
+set_global_assignment -name QIP_FILE lpm_counter8.qip
+set_global_assignment -name BDF_FILE JMP.bdf
+set_global_assignment -name BDF_FILE memoryControl.bdf
+set_global_assignment -name BDF_FILE clkRouter1.bdf
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top

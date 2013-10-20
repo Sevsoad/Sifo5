@@ -33,9 +33,9 @@ applicable agreement for further details.
 	(port
 		(pt 144 40)
 		(output)
-		(text "q[1..0]" (rect 0 0 35 14)(font "Arial" (font_size 8)))
-		(text "q[1..0]" (rect 95 34 125 47)(font "Arial" (font_size 8)))
-		(line (pt 144 40)(pt 128 40)(line_width 3))
+		(text "q[0]" (rect 0 0 21 14)(font "Arial" (font_size 8)))
+		(text "q[0]" (rect 107 34 125 47)(font "Arial" (font_size 8)))
+		(line (pt 144 40)(pt 128 40)(line_width 1))
 	)
 	(drawing
 		(text "up counter" (rect 84 17 128 29)(font "Arial" ))

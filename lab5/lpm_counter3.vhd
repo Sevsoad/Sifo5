@@ -42,7 +42,6 @@ USE lpm.all;
 ENTITY lpm_counter3 IS
 	PORT
 	(
-		clk_en		: IN STD_LOGIC ;
 		clock		: IN STD_LOGIC ;
 		data		: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
 		sload		: IN STD_LOGIC ;
@@ -66,7 +65,6 @@ ARCHITECTURE SYN OF lpm_counter3 IS
 	);
 	PORT (
 			sload	: IN STD_LOGIC ;
-			clk_en	: IN STD_LOGIC ;
 			clock	: IN STD_LOGIC ;
 			q	: OUT STD_LOGIC_VECTOR (7 DOWNTO 0);
 			data	: IN STD_LOGIC_VECTOR (7 DOWNTO 0)
@@ -85,7 +83,6 @@ BEGIN
 	)
 	PORT MAP (
 		sload => sload,
-		clk_en => clk_en,
 		clock => clock,
 		data => data,
 		q => sub_wire0
@@ -102,7 +99,7 @@ END SYN;
 -- Retrieval info: PRIVATE: ALOAD NUMERIC "0"
 -- Retrieval info: PRIVATE: ASET NUMERIC "0"
 -- Retrieval info: PRIVATE: ASET_ALL1 NUMERIC "1"
--- Retrieval info: PRIVATE: CLK_EN NUMERIC "1"
+-- Retrieval info: PRIVATE: CLK_EN NUMERIC "0"
 -- Retrieval info: PRIVATE: CNT_EN NUMERIC "0"
 -- Retrieval info: PRIVATE: CarryIn NUMERIC "0"
 -- Retrieval info: PRIVATE: CarryOut NUMERIC "0"
@@ -120,14 +117,12 @@ END SYN;
 -- Retrieval info: CONSTANT: LPM_PORT_UPDOWN STRING "PORT_UNUSED"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_COUNTER"
 -- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "8"
--- Retrieval info: USED_PORT: clk_en 0 0 0 0 INPUT NODEFVAL clk_en
 -- Retrieval info: USED_PORT: clock 0 0 0 0 INPUT NODEFVAL clock
 -- Retrieval info: USED_PORT: data 0 0 8 0 INPUT NODEFVAL data[7..0]
 -- Retrieval info: USED_PORT: q 0 0 8 0 OUTPUT NODEFVAL q[7..0]
 -- Retrieval info: USED_PORT: sload 0 0 0 0 INPUT NODEFVAL sload
 -- Retrieval info: CONNECT: @clock 0 0 0 0 clock 0 0 0 0
 -- Retrieval info: CONNECT: q 0 0 8 0 @q 0 0 8 0
--- Retrieval info: CONNECT: @clk_en 0 0 0 0 clk_en 0 0 0 0
 -- Retrieval info: CONNECT: @sload 0 0 0 0 sload 0 0 0 0
 -- Retrieval info: CONNECT: @data 0 0 8 0 data 0 0 8 0
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all

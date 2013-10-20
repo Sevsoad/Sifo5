@@ -15,7 +15,6 @@
 
 FUNCTION lpm_counter3 
 (
-	clk_en,
 	clock,
 	data[7..0],
 	sload
