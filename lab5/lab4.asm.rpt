@@ -1,5 +1,5 @@
 Assembler report for lab4
-Tue Oct 22 18:07:32 2013
+Thu Nov 07 04:00:24 2013
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Oct 22 18:07:32 2013 ;
+; Assembler Status      ; Successful - Thu Nov 07 04:00:24 2013 ;
 ; Revision Name         ; lab4                                  ;
 ; Top-level Entity Name ; main                                  ;
 ; Family                ; Stratix II                            ;
@@ -96,7 +96,7 @@ applicable agreement for further details.
 +----------------+----------------------------------------------+
 ; Device         ; EP2S15F484C3                                 ;
 ; JTAG usercode  ; 0xFFFFFFFF                                   ;
-; Checksum       ; 0x002AB743                                   ;
+; Checksum       ; 0x002CC22C                                   ;
 +----------------+----------------------------------------------+
 
 
@@ -107,7 +107,7 @@ applicable agreement for further details.
 +--------------------+------------------------------------------+
 ; Device             ; EPC16                                    ;
 ; JTAG usercode      ; 0xFFFFFFFF                               ;
-; Checksum           ; 0x1EE918CD                               ;
+; Checksum           ; 0x1EDF7143                               ;
 ; Compression Ratio  ; 3                                        ;
 +--------------------+------------------------------------------+
 
@@ -118,13 +118,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
-    Info: Processing started: Tue Oct 22 18:07:27 2013
+    Info: Processing started: Thu Nov 07 04:00:19 2013
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off lab4 -c lab4
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 201 megabytes
-    Info: Processing ended: Tue Oct 22 18:07:32 2013
+    Info: Processing ended: Thu Nov 07 04:00:24 2013
     Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:04
 

@@ -59,6 +59,13 @@ applicable agreement for further details.
 		(line (pt 0 96)(pt 16 96)(line_width 1))
 	)
 	(port
+		(pt 0 112)
+		(input)
+		(text "stackReady" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "stackReady" (rect 21 107 88 121)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112)(line_width 1))
+	)
+	(port
 		(pt 248 32)
 		(output)
 		(text "changeState" (rect 0 0 71 14)(font "Arial" (font_size 8)))
@@ -113,6 +120,13 @@ applicable agreement for further details.
 		(text "ALU_OUT[2..0]" (rect 0 0 84 14)(font "Arial" (font_size 8)))
 		(text "ALU_OUT[2..0]" (rect 143 139 227 153)(font "Arial" (font_size 8)))
 		(line (pt 248 144)(pt 232 144)(line_width 3))
+	)
+	(port
+		(pt 248 160)
+		(output)
+		(text "stackClk" (rect 0 0 47 14)(font "Arial" (font_size 8)))
+		(text "stackClk" (rect 180 155 227 169)(font "Arial" (font_size 8)))
+		(line (pt 248 160)(pt 232 160)(line_width 1))
 	)
 	(drawing
 		(rectangle (rect 16 16 232 176)(line_width 1))

@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 2.131 ns
+Actual Time    : -0.173 ns
 From           : clk
-To             : Ron:inst6|lpm_shiftreg0:inst5|lpm_shiftreg:lpm_shiftreg_component|dffs[7]
+To             : control:inst7|inst4
 From Clock     : --
 To Clock       : start/stop
 Failed Paths   : 0
@@ -15,9 +15,9 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 26.054 ns
-From           : control:inst8|CommandDecoder:inst1|ALUcontrol:inst7|lpm_counter1:inst6|lpm_counter:lpm_counter_component|cntr_ovi:auto_generated|safe_q[0]
-To             : changeState
+Actual Time    : 42.374 ns
+From           : Ron:inst1|lpm_shiftreg0:inst5|lpm_shiftreg:lpm_shiftreg_component|dffs[1]
+To             : ronOutput[1]
 From Clock     : start/stop
 To Clock       : --
 Failed Paths   : 0
@@ -25,9 +25,9 @@ Failed Paths   : 0
 Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
-Actual Time    : 16.213 ns
-From           : clk
-To             : ronCLk
+Actual Time    : 7.040 ns
+From           : start/stop
+To             : memoryClk
 From Clock     : --
 To Clock       : --
 Failed Paths   : 0
@@ -35,52 +35,52 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : 15.189 ns
-From           : start/stop
-To             : ALU:inst2|incs:inst|lpm_counter3:inst|lpm_counter:lpm_counter_component|cntr_bli:auto_generated|safe_q[0]
+Actual Time    : 27.420 ns
+From           : clk
+To             : Ron:inst1|lpm_shiftreg0:inst5|lpm_shiftreg:lpm_shiftreg_component|dffs[0]
 From Clock     : --
-To Clock       : clk
-Failed Paths   : 0
-
-Type           : Clock Setup: 'clk'
-Slack          : N/A
-Required Time  : None
-Actual Time    : 43.41 MHz ( period = 23.038 ns )
-From           : control:inst8|CommandHandler:inst2|lpm_tff1:inst6|lpm_ff:lpm_ff_component|dffs[2]
-To             : memory:inst|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_nrv:auto_generated|ram_block1a0~porta_address_reg2
-From Clock     : clk
-To Clock       : clk
+To Clock       : start/stop
 Failed Paths   : 0
 
 Type           : Clock Setup: 'start/stop'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 43.73 MHz ( period = 22.866 ns )
-From           : control:inst8|CommandHandler:inst2|lpm_tff1:inst6|lpm_ff:lpm_ff_component|dffs[2]
-To             : memory:inst|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_nrv:auto_generated|ram_block1a0~porta_address_reg2
+Actual Time    : 14.98 MHz ( period = 66.772 ns )
+From           : memory:inst|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_nrv:auto_generated|ram_block1a0~porta_address_reg7
+To             : control:inst7|CommandHandler:inst2|lpm_tff1:inst6|lpm_ff:lpm_ff_component|dffs[4]
 From Clock     : start/stop
 To Clock       : start/stop
 Failed Paths   : 0
 
-Type           : Clock Hold: 'start/stop'
-Slack          : Not operational: Clock Skew > Data Delay
+Type           : Clock Setup: 'clk'
+Slack          : N/A
 Required Time  : None
-Actual Time    : N/A
-From           : control:inst8|CommandDecoder:inst1|ALUcontrol:inst7|lpm_counter1:inst6|lpm_counter:lpm_counter_component|cntr_ovi:auto_generated|safe_q[0]
-To             : control:inst8|CommandDecoder:inst1|ALUcontrol:inst7|lpm_counter1:inst6|lpm_counter:lpm_counter_component|cntr_ovi:auto_generated|safe_q[0]
-From Clock     : start/stop
-To Clock       : start/stop
-Failed Paths   : 489
+Actual Time    : 15.00 MHz ( period = 66.646 ns )
+From           : memory:inst|lpm_rom:rom|altrom:srom|altsyncram:rom_block|altsyncram_nrv:auto_generated|ram_block1a0~porta_address_reg7
+To             : control:inst7|CommandHandler:inst2|lpm_tff1:inst6|lpm_ff:lpm_ff_component|dffs[4]
+From Clock     : clk
+To Clock       : clk
+Failed Paths   : 0
 
 Type           : Clock Hold: 'clk'
 Slack          : Not operational: Clock Skew > Data Delay
 Required Time  : None
 Actual Time    : N/A
-From           : control:inst8|CommandDecoder:inst1|ALUcontrol:inst7|lpm_counter1:inst6|lpm_counter:lpm_counter_component|cntr_ovi:auto_generated|safe_q[0]
-To             : control:inst8|CommandDecoder:inst1|ALUcontrol:inst7|lpm_counter1:inst6|lpm_counter:lpm_counter_component|cntr_ovi:auto_generated|safe_q[0]
+From           : stack:inst9|pop:inst28|lpm_counter11:inst|lpm_counter:lpm_counter_component|cntr_bvj:auto_generated|safe_q[0]
+To             : Ron:inst1|lpm_shiftreg0:inst5|lpm_shiftreg:lpm_shiftreg_component|dffs[1]
 From Clock     : clk
 To Clock       : clk
-Failed Paths   : 489
+Failed Paths   : 1224
+
+Type           : Clock Hold: 'start/stop'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : stack:inst9|pop:inst28|lpm_counter11:inst|lpm_counter:lpm_counter_component|cntr_bvj:auto_generated|safe_q[0]
+To             : Ron:inst1|lpm_shiftreg0:inst5|lpm_shiftreg:lpm_shiftreg_component|dffs[1]
+From Clock     : start/stop
+To Clock       : start/stop
+Failed Paths   : 1224
 
 Type           : Total number of failed paths
 Slack          : 
@@ -90,7 +90,7 @@ From           :
 To             : 
 From Clock     : 
 To Clock       : 
-Failed Paths   : 978
+Failed Paths   : 2448
 
 --------------------------------------------------------------------------------------
 
